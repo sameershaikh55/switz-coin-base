@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  transition: 0.4s;
+}
+
+// VARIABLES START
+$color1: #ff6100;
+$color2: #1a1b1c;
+$color3: #afafaf;
+$color4: #777777;
+$color5: #606060;
+// VARIABLES END
+
+// GLOBAL START
+html {
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 92%;
+  }
+}
+@media screen and (max-width: 668px) {
+  html {
+    font-size: 86%;
+  }
+}
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 82%;
+  }
+}
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 78%;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 72%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(90.23deg, #ff6100 0%, #29d6dd 100%);
+  }
+}
+
+.f8 {
+  font-size: 0.5rem;
+}
+
+.f10 {
+  font-size: 0.625rem;
+}
+
+.f12 {
+  font-size: 0.75rem;
+}
+
+.f14 {
+  font-size: 0.875rem;
+}
+
+.f15 {
+  font-size: 0.938rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f18 {
+  font-size: 1.125rem;
+}
+
+.f20 {
+  font-size: 1.25rem;
+}
+
+.f22 {
+  font-size: 1.375rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f28 {
+  font-size: 1.75rem;
+}
+
+.f34 {
+  font-size: 2.125rem;
+}
+
+.f30 {
+  font-size: 1.875rem;
+}
+
+.f35 {
+  font-size: 2.125rem;
+  line-height: 57px;
+}
+
+.f50 {
+  font-size: 3.125rem;
+  line-height: 65px;
+}
+
+.f64 {
+  font-size: 4rem;
+  line-height: 71px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.fw900 {
+  font-weight: 900;
+}
+
+.page_container {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  // position: fixed;
+  // top: 0%;
+  // left: 0%;
+  // bottom: 0%;
+  // right: 0%;
+  background: url("../../public/assets/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+// COLORS
+.color1 {
+  color: $color1;
+}
+
+.bg_color1 {
+  background: $color1;
+}
+
+.color2 {
+  color: $color2;
+}
+
+.bg_color2 {
+  background: $color2;
+}
+
+.color3 {
+  color: $color3;
+}
+
+.bg_color3 {
+  background: $color3;
+}
+
+.color4 {
+  color: $color4;
+}
+
+.bg_color4 {
+  background: $color4;
+}
+
+.color5 {
+  color: $color5;
+}
+
+.bg_color5 {
+  background: $color5;
+}
+
+// HEADER START
+.header_container {
+  background: linear-gradient(90.23deg, #ff6100 0%, #29d6dd 100%);
+
+  h1 {
+    font-weight: 700;
+  }
+}
+
+.top_navigation {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 3;
+}
+
+.under_navigation {
+  height: 97px;
+}
+// HEADER END
+
+// UP HERO START
+.up_hero_container {
+  background: url("../../public/assets/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 97px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+  .lets_start {
+    background: $color1;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0.5rem 2rem;
+  }
+
+  .position-relative {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 125px);
+  }
+
+  .trnsact_with_container {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    background: #fff;
+    padding: 1rem 2rem;
+    width: 90%;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+// UP HERO END
+
+// NAVIGATION START
+.navigation_container {
+  background: #1a1b1c;
+
+  .active_navlink {
+    background: $color1;
+  }
+
+  .header_btns {
+    button:nth-child(2) {
+      background: #ff620051;
+      border: 2px solid $color1;
+      border-radius: 4px;
+      color: #fff;
+    }
+  }
+
+  .hamb_cross {
+    width: 35px;
+  }
+}
+// NAVIGATION END
+
+// HERO START
+.hero_container {
+  .mySwiper {
+    margin-top: 2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: $color1;
+
+    .single_swiper {
+      padding: 3rem;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+
+      img[alt="Get 80% Loan on your Crypto Assets"] {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .lets_start {
+        background: rgba(255, 255, 255, 0.2);
+        border: 2px solid #ffffff;
+        box-sizing: border-box;
+        backdrop-filter: blur(50px);
+        color: #ffffff;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0.5rem 2rem;
+      }
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 1;
+      margin: 0px 3px !important;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      width: 44px;
+      border-radius: 50px;
+    }
+  }
+}
+// HERO END
+
+// TRANSACT START
+.transact_container {
+  margin-top: 1rem;
+}
+// TRANSACT END
+
+// CONTACT START
+.contact_container {
+  margin-top: 1rem;
+
+  input {
+    height: 50px;
+  }
+
+  .submit {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0.5rem 2rem;
+  }
+}
+// CONTACT END
+
+// FOOTER START
+.footer_container {
+  margin-top: 2rem;
+  background: linear-gradient(90.23deg, #ff6100 0%, #29d6dd 100%);
+  padding: 2rem 0rem;
+}
+// FOOTER END
+
+// HOW IT WORKS START
+.how_it_works {
+  background: #ffffff;
+  border-radius: 10px;
+  min-height: 1px;
+  height: 100%;
+}
+// HOW IT WORKS END
+
+// SUBMIT PGAE START
+.thankyou_container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  .thankyou_container_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    height: calc(100vh - 225px);
+  }
+}
+// SUBMIT PGAE END
+
+/* ==================== SideBAR STYLING END ======================== */
+.SideBarContainer {
+  margin-top: 97px;
+  position: fixed;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  color: white;
+  background: linear-gradient(180deg, #121924 0%, rgba(18, 25, 36, 0) 700%);
+  height: 100vh;
+  z-index: 2;
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  .get_started {
+    button {
+      background: #ff8811;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      height: 36px;
+      width: 120px;
+      border: none;
+    }
+  }
+
+  a.active {
+    color: $color1;
+  }
+}
+
+.SideBarContainer ul {
+  margin-top: 56px;
+  padding-left: 0rem;
+  margin-bottom: 0px;
+}
+
+.SideBarContainer ul li {
+  margin-bottom: 25px;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  .activeNav::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 10%;
+    width: 100%;
+    background-color: #007bbc;
+    border-radius: 5px;
+  }
+}
+
+.SideBarContainer .header_btns {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CrossBTn {
+  position: absolute;
+  top: 7%;
+  right: 6.5%;
+  cursor: pointer;
+  height: 25px;
+}
+/* ==================== SideBAR STYLING END ======================== */
+
+/* ==================== APPLY LOAN START ======================== */
+.apply_loan_container {
+  margin: 4rem 0rem;
+
+  .apply_loan_right_container {
+    background: #ff8b44;
+    border-radius: 10px;
+    min-height: 1px;
+    height: 100%;
+  }
+
+  .to_be_paid {
+    background: #fff;
+    border-radius: 8px;
+
+    button {
+      width: 91px;
+      height: 58px;
+      background: #f1f1f1;
+      border: 2px solid #000000;
+      border-radius: 8px;
+    }
+
+    input {
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+}
+
+.select {
+  img {
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+
+  &:hover {
+    img {
+      transform: rotate(-90deg);
+    }
+
+    .options_container {
+      display: block;
+    }
+  }
+}
+
+.module-border-wrap {
+  position: relative;
+  background: #f1f1f1;
+  padding: 1.4px;
+  height: 58px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    transform: rotate(360deg);
+    transition: 0.3s;
+  }
+
+  .options_container {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 3.75rem;
+    left: 0%;
+    width: 100%;
+    background: #f1f1f1;
+    border: none;
+    backdrop-filter: blur(42px);
+    border-radius: 3px 3px 5px 5px;
+    color: $color4;
+    max-height: 200px !important;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(36, 40, 54, 1);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color4;
+      border-radius: 10px;
+    }
+
+    li {
+      transform: 0.5s;
+
+      &:hover {
+        background-color: #ff8c4423;
+      }
+    }
+  }
+
+  &:hover {
+    img {
+      transform: rotate(180deg);
+    }
+
+    .options_container {
+      display: block;
+    }
+  }
+}
+
+.inp_control {
+  border-radius: 8px;
+  background: #f1f1f1;
+  height: 58px;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  color: #232323;
+  padding: 0rem 1rem;
+  font-weight: 500;
+}
+
+.inp_control_textarea {
+  border-radius: 8px;
+  background: #f1f1f1;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  color: #232323;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  resize: none;
+}
+
+.form_submit_btn {
+  background: #000000;
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: 60px;
+  min-width: 460px;
+  max-width: 460px;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  border: none;
+}
+
+.pass_inp_container {
+  .eye {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.form_submit_btn2 {
+  background: #000000;
+  box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  border: none;
+}
+/* ==================== APPLY LOAN END ======================== */
+
+/* ==================== UPLOAD START ======================== */
+.upload_container {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px dashed #f1f1f1;
+  border-radius: 10px;
+  width: 100%;
+
+  input {
+    display: none;
+  }
+
+  label {
+    height: 58px;
+  }
+}
+/* ==================== UPLOAD END ======================== */
+
+// MEDIA START
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .up_hero_container .position-relative,
+  .up_hero_container {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .navigation_container {
+    padding: 0.4rem 0rem;
+
+    .header_btns {
+      button {
+        height: 28px;
+      }
+    }
+  }
+  .up_hero_container {
+    padding: 0rem 2rem;
+  }
+  .contact_container {
+    iframe {
+      height: 300px;
+    }
+  }
+  .header_container {
+    img {
+      width: 40px;
+    }
+  }
+  .form_submit_btn {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .thankyou_container .thankyou_container_inner {
+    height: calc(100vh - 204px);
+  }
+  .upload_container p {
+    font-size: 22px;
+  }
+  .form_submit_btn_up {
+    width: 100%;
+  }
+}
+// MEDIA END

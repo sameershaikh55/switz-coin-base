@@ -418,7 +418,9 @@ body {
     align-items: center;
     background: #ffffff;
     border-radius: 10px;
-    height: calc(100vh - 225px);
+    min-height: calc(100vh - 225px);
+    margin-top: 5rem;
+    padding: 2rem 0rem;
   }
 }
 // SUBMIT PGAE END

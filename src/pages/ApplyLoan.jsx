@@ -148,7 +148,7 @@ const ApplyLoan = () => {
                             className="text-white mb-1 fw600"
                             htmlFor="Email Address(Please Enter Carefully)"
                           >
-                            Email Address(Please Enter Carefully
+                            Email Address(Please Enter Carefully)
                           </label>
                           <br />
                           <input

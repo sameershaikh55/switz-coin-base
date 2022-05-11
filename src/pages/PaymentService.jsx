@@ -134,12 +134,12 @@ const PaymentService = () => {
                       ></textarea>
                     </div>
                     <div className="col-12 col-md-6 align-self-end pb-2">
-                      <label
+                      {/* <label
                         className="text-white mb-1 fw600"
                         htmlFor="Postal Address"
                       >
                         Postal Address
-                      </label>
+                      </label> */}
                       <Upload>
                         <div className="d-none d-md-block">
                           Attach Invoice (If Any)

@@ -106,13 +106,18 @@ const FixedDeposit = () => {
                         value="20 Coin"
                       />
                     </div>
+                    <div className="d-block d-md-none col-12 col-md-6 d-flex align-items-center gap-3">
+                      <span className="fw600 text-white f18">
+                        Recieving @Maturity
+                      </span>
+                    </div>
                     <div className="col-12 col-md-6 d-flex align-items-center gap-3">
                       <Checkbox />
                       <span className="fw600 text-white f18">
                         Terms & Conditions
                       </span>
                     </div>
-                    <div className="col-12 col-md-6 d-flex align-items-center gap-3">
+                    <div className="d-none d-md-block col-12 col-md-6 d-flex align-items-center gap-3">
                       <span className="fw600 text-white f18">
                         Recieving @Maturity
                       </span>

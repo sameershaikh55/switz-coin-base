@@ -44,7 +44,7 @@ const Navigation = ({ ClickEvent, isOpen }) => {
       <div className="page_container">
         <div className="container-fluid">
           <div className="d-flex justify-content-between align-items-center">
-            <ul className="mb-0 d-none d-lg-flex list-unstyled">
+            <ul className="mb-0 d-none d-xl-flex list-unstyled">
               {navigations.map((content, i) => {
                 return (
                   <NavLink
@@ -69,7 +69,7 @@ const Navigation = ({ ClickEvent, isOpen }) => {
               <button className="px-2">Connect wallet</button>
             </div>
 
-            <div className="d-block d-lg-none">
+            <div className="d-block d-xl-none">
               {(isOpen && (
                 <img
                   className="hamb_cross"
